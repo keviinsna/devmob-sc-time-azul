@@ -5,6 +5,7 @@
     <title>SC - Fale Conosco</title>
     <link rel="icon" type="image/x-icon" href="img/logo-ufrj.jpg">
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <header>
@@ -36,17 +37,20 @@
     </nav>
     <section>
         <h1>Fale Conosco</h1>
-        <article class="fale_conosco-form">
-            <form action="#">
-                <label>Nome</label>
-                <input type="text" placeholder="Jorge Rezende Luz">
-                <label>Email</label>
-                <input type="email" placeholder="email123@dominio.com" required>
-                <label>Celular</label>
-                <input type="tel" pattern="\(\d{2}\)\s?9\d{4}-\d{4}" title="Formato:(90) 98888-8888" placeholder="(90) 91234-5678">
-                <label>Mensagem (500 caracteres)</label>
-                <textarea rows="10" cols="30" maxlength="500"></textarea>
-                <input type="submit" id="submit-button">
+        <article>
+            <form action="#" id="fale_conosco-form">
+                <fieldset>
+                    <legend>Tire Sua Dúvida</legend>
+                    <label>Nome</label>
+                    <input type="text" placeholder="Jorge Rezende Luz" required>
+                    <label>Email</label>
+                    <input type="email" placeholder="email123@dominio.com" required>
+                    <label>Celular</label>
+                    <input type="tel" pattern="\(\d{2}\)\s?9\d{4}-\d{4}" title="Formato:(90) 98888-8888" placeholder="(90) 91234-5678">
+                    <label>Mensagem (500 caracteres)</label>
+                    <textarea rows="10" cols="30" maxlength="500"></textarea>
+                    <input type="submit" id="submit-button">
+                </fieldset>
             </form>
         </article>
         <article class="fale_conosco-socials">
@@ -64,6 +68,5 @@
     <footer>
         <h4>Semana da Computação&copy;</h4>
     </footer>
-    <script src="scripts.js"></script>
 </body>
 </html>
