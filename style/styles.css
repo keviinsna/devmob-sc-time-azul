@@ -1,0 +1,132 @@
+img {
+    margin-left: 1.4rem;
+  }
+  nav {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #003366;
+  }
+  
+  nav ul {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    line-height: 40px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  
+  .icons {
+    color: #ffffff;
+    right: 5%;
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  /* Breakpoints */
+  @media (max-width: 768px) {
+    .icons #close-icon {
+      display: none;
+    }
+    .icons {
+      display: inline-flex;
+      margin-right: 2rem;
+    }
+    #check:checked ~ .icons #menu-icon {
+      display: none;
+    }
+    #check:checked ~ .icons #close-icon {
+      display: block;
+    }
+    nav {
+      width: 100%;
+      height: 6rem;
+    }
+    nav ul {
+      display: none;
+      background-color: #003366;
+      position: absolute;
+      top: 100%;
+      width: 100%;
+    }
+    nav ul li {
+      display: block;
+      font-size: 1.1rem;
+      text-align: center;
+      margin: 0.7rem 0;
+    }
+    #check:checked ~ ul {
+      display: block;
+    }
+  }
+
+/* Body Section */
+
+.titulo-fale_conosco {
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+}
+.subtitulo-fale-conosco {
+    display: flex;
+    font-style: italic;
+    justify-content: center;
+}
+
+.article-form-fale_conosco {
+    display: flex;
+    justify-content: center;
+}
+
+.article-socials-fale_conosco {
+    display: flex;
+    justify-content: center;
+}
+
+
+.form_fieldset-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+    gap: 10px; /* Espaçamento entre as colunas */
+    grid-template-areas:
+        "input1 textarea"
+        "input2 textarea"
+        "input3 textarea"
+        ". bota-form";
+}
+
+.lado_esquerdo-fielset {
+    grid-area: input1; /* Correspondente a primeira área */
+    display: flex;
+    flex-direction: column;
+}
+
+.lado_direito-fielset {
+    grid-area: textarea; /* Correspondente a segunda área */
+}
+
+.botao_form-fale_conosco {
+    display: flex;
+    justify-content: center;
+    grid-area: botao-form;
+}
