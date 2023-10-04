@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/minerva.png" />
+    <link rel="stylesheet" href="style/reset_css.css" />
+    <link rel="stylesheet" href="style/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Semana da Computação</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html"><img src="../images/logo-ufrj.png" /></a>
+        <input type="checkbox" id="check" />
+        <label for="check" class="icons">
+          <i class="fa-solid fa-bars" id="menu-icon"></i>
+          <i class="fa-solid fa-xmark" id="close-icon"></i>
+        </label>
+        <ul>
+          <li>
+            <a class="active" href="pages/programacao.html">Programação</a>
+          </li>
+          <li><a href="pages/palestrantes.html">Palestrantes</a></li>
+          <li><a href="pages/sessoes.html">Sessões</a></li>
+          <li><a href="pages/ingressos.html">Ingressos</a></li>
+          <li><a href="">Fale conosco</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+        <h1 class="titulo-fale_conosco">Fale Conosco</h1>
+        <h3 class="subtitulo-fale-conosco">Tire sua dúvida! Entraremos em contato em breve!</h3>
+        <article class="article-form-fale_conosco">
+            <form action="#" id="fale_conosco-form" class="form-fale_conosco">
+
+
+                <fieldset class="form_fieldset-container">
+                    
+
+                    <div class="lado_esquerdo-fielset">
+
+                    
+                        <label class="label_esquerdo-fale_conosco">Nome</label>
+                        <input type="text" placeholder="Jorge Rezende Luz" required class="input_form-fale_conosco">
+
+                    
+                        <label class="label_esquerdo-fale_conosco">Email</label>
+                        <input type="email" placeholder="email123@dominio.com" required class="input_form-fale_conosco">
+                    
+
+                    
+                        <label class="label_esquerdo-fale_conosco">Celular</label>
+                        <input type="tel" pattern="\(\d{2}\)\s?9\d{4}-\d{4}" title="Formato:(90) 98888-8888" placeholder="(90) 91234-5678" class="input_form-fale_conosco">
+                    
+                    </div>
+
+
+                    <div class="lado_direito-fielset">
+                        <textarea rows="20" cols="40" maxlength="500" placeholder="Escreva sua dúvida"></textarea>
+                    </div>
+                    
+                </fieldset>
+                <div class="botao_form-fale_conosco">
+                    <input type="submit" id="submit-button">
+                </div>
+
+
+            </form>
+        </article>
+        <article class="article-socials-fale_conosco">
+            <a href="https://www.instagram.com/">
+                <img src="images/logo-instagram.jpg" width="200px" class="logo-instagram">
+            </a>
+            <a href="https://www.facebook.com/">
+                <img src="images/logo-facebook.jpg" width="200px" class="logo-facebook">
+            </a>
+            <a href="https://www.twitter.com/">
+                <img src="images/logo-twitter.jpg" width="200px" class="logo-twitter">
+            </a>
+        </article>
+    </section>
+    <footer>
+        <h4>Semana da Computação&copy;</h4>
+    </footer>
+  </body>
+</html>
+
