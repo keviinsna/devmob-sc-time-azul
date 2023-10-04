@@ -80,69 +80,31 @@ img {
     }
   }
 
-/* Body Section */
-
-.titulo-fale_conosco {
-    display: flex;
-    font-weight: bold;
-    justify-content: center;
-    margin: 5% 5% 0% 5%;
-}
-.subtitulo-fale-conosco {
-    display: flex;
-    font-style: italic;
-    justify-content: center;
-    margin: 2.5% 0% 5% 0%;
+/*Titulo da Main do Fale Conosco*/
+.titulo-main-fale_conosco {
+    margin: 5%;
+    text-align: center;
 }
 
-.article-form-fale_conosco {
-    display: flex;
-    justify-content: center;
+/*Grid Template*/
+.lado_esquerdo-socials-fale_conosco {
+    text-align: center;
 }
 
-.article-socials-fale_conosco {
-    display: flex;
-    justify-content: center;
+.lado_direito-input-fale_conosco {
+  display: flex;
+  flex-direction: column;
 }
 
-
-.form_fieldset-container {
+.article-grid-container-fale_conosco {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
-    gap: 12.5%; /* Espaçamento entre as colunas */
-    grid-template-areas:
-        "input1 textarea"
-        "input2 textarea"
-        "input3 textarea"
-        ". bota-form";
+    grid-template-columns: 1fr 1fr;
 }
 
-.lado_esquerdo-fielset {
-    grid-area: input1; /* Correspondente a primeira área */
-    display: flex;
-    flex-direction: column;
-    margin-top: 12.5%;
-}
-
-.lado_direito-fielset {
-    grid-area: textarea; /* Correspondente a segunda área */
-}
-
-.botao_form-fale_conosco {
-    display: flex;
-    justify-content: center;
-    grid-area: botao-form;
-    margin-top: 5%;
-}
-
-.label_esquerdo-fale_conosco {
-    margin: 10% 0% 10% 7%;
-}
-.label_esquerdo-fale_conosco:nth-child(1) {
-    margin: 0% 0% 10% 7%;
-}
-
-.input_form-fale_conosco {
-    margin: 0% 0% 0% 7%;
-    width: 100%;
+.lado_direito-form-fale_conosco {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
+  margin-left: 20%;
 }
