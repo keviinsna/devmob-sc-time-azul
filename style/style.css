@@ -1,6 +1,7 @@
 img {
   margin-left: 1.4rem;
 }
+
 nav {
   position: sticky;
   display: flex;
@@ -48,20 +49,25 @@ nav ul li a {
   .icons #close-icon {
     display: none;
   }
+
   .icons {
     display: inline-flex;
     margin-right: 2rem;
   }
-  #check:checked ~ .icons #menu-icon {
+
+  #check:checked~.icons #menu-icon {
     display: none;
   }
-  #check:checked ~ .icons #close-icon {
+
+  #check:checked~.icons #close-icon {
     display: block;
   }
+
   nav {
     width: 100%;
     height: 6rem;
   }
+
   nav ul {
     display: none;
     background-color: #003366;
@@ -69,13 +75,15 @@ nav ul li a {
     top: 100%;
     width: 100%;
   }
+
   nav ul li {
     display: block;
     font-size: 1.1rem;
     text-align: center;
     margin: 0.7rem 0;
   }
-  #check:checked ~ ul {
+
+  #check:checked~ul {
     display: block;
   }
 }
