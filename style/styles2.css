@@ -82,29 +82,147 @@ img {
 
 /*Titulo da Main do Fale Conosco*/
 .titulo-main-fale_conosco {
-    margin: 5%;
+    font-weight: bold;
+    font-size: 4rem;
+    margin: 7.5% 5% 2.5% 5%;
     text-align: center;
 }
 
 /*Grid Template*/
+.article-grid-container-fale_conosco {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+/* Lado Esquerdo */
 .lado_esquerdo-socials-fale_conosco {
+    text-align: center;
+    margin: 0% 0% 25% 10%;
+    padding: 0% 10% 10% 10%;
+    width: 60%;
+}
+
+.lado-esquerdo-texto-fale_conosco h1{ 
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin: 20% 0% 7.5% 5%;
+    text-align: center;
+}
+
+.lado-esquerdo-texto-fale_conosco h3{
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin: 10% 0% 7.5% 5%;
+    text-align: center;
+}
+
+.lado-esquerdo-redes_sociais-fale_conosco {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lado-esquerdo-redes_sociais-fale_conosco img:not(.logo-sc-fale_conosco){
+    margin: 30% 0% 30% 0%;
+    width: 100px;
+}
+
+/*Procurar fazer um hover maneiro depois com os links das fotos de redes sociais*/
+
+.logo-sc-fale_conosco {
+    margin-top: 10%;
+    border-radius: 50%;
+    width: 200px;
+}
+
+
+
+
+
+/* Lado Direito */
+
+.lado-direito-texto-fale_conosco {
+    width: 100%;
+    padding: 0% 30% 0% 0%;
+}
+
+.lado-direito-texto-fale_conosco h1{
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin: 20% 0% 7.5% 5%;
+    text-align: center;
+}
+.lado-direito-texto-fale_conosco h3{
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin: 7.5% 0% 7.5% 5%;
     text-align: center;
 }
 
 .lado_direito-input-fale_conosco {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 15%;
 }
 
-.article-grid-container-fale_conosco {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.lado_direito-input-fale_conosco input {
+    border-color: none;
+    border-radius: 7.5px;
+    height: 24px;
+    margin: 5% 5% 10% 5%;
+    text-align: center;
 }
+.lado_direito-input-fale_conosco input:nth-child(1) {
+    margin-top: 10%;
+}
+.lado_direito-input-fale_conosco input:nth-child(3) {
+    margin-bottom: 10%;
+}
+
+.lado_direito-input-fale_conosco input:focus {
+    box-shadow: 0 0 5px 4px rgba(9, 104, 237, 0.5);
+}
+
+.lado_direito-textarea-fale_conosco {
+    border-radius: 7.5px;
+    margin-top: 5%;
+    resize: none;
+}
+
+.lado_direito-textarea-fale_conosco:focus {
+    box-shadow: 0 0 5px 4px rgba(9, 104, 237, 0.5);
+}
+
+.botao_form-fale_conosco {
+    background-color: #0968ed;
+    border: none;
+    border-radius: 60px;
+    color: #ffff;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 500;
+    height: 7.5%;
+    margin: 10% 5% 0% 5%;
+    padding: 2.5%;
+    text-align: center;
+    width: 50%;
+}
+.botao_form-fale_conosco:hover {
+    text-decoration: underline;
+    background-color: #003366;
+    transition: .5s all ease;
+}
+
 
 .lado_direito-form-fale_conosco {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: fit-content;
-  margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 0% 0% 25% 10%;
+    padding: 0% 10% 10% 10%;
+    width: 60%;
 }
+
