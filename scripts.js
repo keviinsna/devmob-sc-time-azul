@@ -11,4 +11,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // Não tem como tirar o título do site sem biblioteca externa
-// Deve-se decidir se mantem isso ou não
+// Deve-se decidir se mantem isso ou não 
+
+const checkbox = document.getElementById("check");
+const titulo = document.getElementById("titulo-main-fale_conosco");
+
+checkbox.addEventListener("click", function() {
+  if (checkbox.checked) {
+    titulo.style.marginTop = "50%";
+  } else {
+    titulo.style.marginTop = "7.5%";
+  }
+}) 
+

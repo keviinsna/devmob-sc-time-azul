@@ -42,45 +42,16 @@ img {
   #check {
     display: none;
   }
-  
-  /* Breakpoints */
-  @media (max-width: 768px) {
-    .icons #close-icon {
-      display: none;
-    }
-    .icons {
-      display: inline-flex;
-      margin-right: 2rem;
-    }
-    #check:checked ~ .icons #menu-icon {
-      display: none;
-    }
-    #check:checked ~ .icons #close-icon {
-      display: block;
-    }
-    nav {
-      width: 100%;
-      height: 6rem;
-    }
-    nav ul {
-      display: none;
-      background-color: #003366;
-      position: absolute;
-      top: 100%;
-      width: 100%;
-    }
-    nav ul li {
-      display: block;
-      font-size: 1.1rem;
-      text-align: center;
-      margin: 0.7rem 0;
-    }
-    #check:checked ~ ul {
-      display: block;
-    }
-  }
+
+body {
+    background-color: rgba(245, 232, 183, 0.25);
+}
+main {
+    height: 175vh;
+}
 
 /*Titulo da Main do Fale Conosco*/
+
 .titulo-main-fale_conosco {
     font-weight: bold;
     font-size: 4rem;
@@ -90,8 +61,8 @@ img {
 
 /*Grid Template*/
 .article-grid-container-fale_conosco {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 
@@ -127,18 +98,18 @@ img {
     margin: 30% 0% 30% 0%;
     width: 100px;
 }
-
-/*Procurar fazer um hover maneiro depois com os links das fotos de redes sociais*/
-
-.logo-sc-fale_conosco {
-    margin-top: 10%;
-    border-radius: 50%;
-    width: 200px;
+.mapa_embedado-fale_conosco h3{
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 150%;
+    margin: 5% 0% 10% 7.5%;
+    text-align: start;
+    white-space: pre-line;
 }
-
-
-
-
+.mapa-embedado {
+    display: flex;
+    justify-content: center;
+}
 
 /* Lado Direito */
 
@@ -150,13 +121,13 @@ img {
 .lado-direito-texto-fale_conosco h1{
     font-weight: bold;
     font-size: 2.5rem;
-    margin: 20% 0% 7.5% 5%;
+    margin: -5% 0% 7.5% 0%;
     text-align: center;
 }
 .lado-direito-texto-fale_conosco h3{
     font-weight: bold;
     font-size: 1.25rem;
-    margin: 7.5% 0% 7.5% 5%;
+    margin: 7.5% 0% 7.5% 0%;
     text-align: center;
 }
 
@@ -171,7 +142,7 @@ img {
     border-color: none;
     border-radius: 7.5px;
     height: 24px;
-    margin: 5% 5% 10% 5%;
+    margin: 5% 0% 10% 0%;
     text-align: center;
 }
 .lado_direito-input-fale_conosco input:nth-child(1) {
@@ -204,7 +175,7 @@ img {
     font-size: 1.25rem;
     font-weight: 500;
     height: 7.5%;
-    margin: 10% 5% 0% 5%;
+    margin: 10% 5% 0% 2.5%;
     padding: 2.5%;
     text-align: center;
     width: 50%;
@@ -226,3 +197,120 @@ img {
     width: 60%;
 }
 
+
+/* Breakpoints */
+@media (max-width: 768px) {
+  .icons #close-icon {
+    display: none;
+  }
+
+  .icons {
+    display: inline-flex;
+    margin-right: 2rem;
+  }
+
+  #check:checked~.icons #menu-icon {
+    display: none;
+  }
+
+  #check:checked~.icons #close-icon {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    height: 6rem;
+  }
+
+  nav ul {
+    display: none;
+    background-color: #003366;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+  }
+
+  nav ul li {
+    display: block;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 0.7rem 0;
+  }
+
+  #check:checked~ul {
+    display: block;
+  }
+  #check:checked{
+    margin: 1000px;
+  }
+  #check:checked nav {
+    margin-bottom: 500px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .article-grid-container-fale_conosco {
+    grid-template-columns: 1fr;
+  }
+  main {
+    height: 300vh;
+  }
+  .titulo-main-fale_conosco {
+    font-size: 3rem;
+    margin: 12.5% 0% 0% 4%;
+  }
+  .lado_esquerdo-socials-fale_conosco {
+    margin-bottom: 10%;
+  }
+  .lado_direito-form-fale_conosco {
+    margin-bottom: 50%;
+  }
+}
+
+footer {
+    display: flex;
+    gap: 0.9rem;
+    padding-bottom: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #272727;
+    color: #ffffff;
+}
+
+.footer {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer p {
+    width: 75%;
+    text-align: justify;
+}
+
+footer .footer-redes-sociais {
+    display: flex;
+    gap: 1rem;
+}
+
+footer .footer-redes-sociais i {
+    font-size: xx-large;
+    color: #ffffff
+}
+
+footer .footer-redes-sociais i:hover {
+    cursor: pointer;
+}
+
+.fa-facebook:hover {
+    color: blue;
+}
+
+.fa-instagram:hover {
+    color: #E11D74;
+}
