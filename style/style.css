@@ -44,6 +44,214 @@ nav ul li a {
   display: none;
 }
 
+
+footer {
+  display: flex;
+  gap: 0.9rem;
+  padding-bottom: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #272727;
+  color: #ffffff;
+}
+
+.footer {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer p {
+  width: 75%;
+  text-align: justify;
+}
+
+footer .footer-redes-sociais {
+  display: flex;
+  gap: 1rem;
+}
+
+footer .footer-redes-sociais i {
+  font-size: xx-large;
+  color: #ffffff
+}
+
+footer .footer-redes-sociais i:hover {
+  cursor: pointer;
+}
+
+.fa-facebook:hover {
+  color: blue;
+}
+
+.fa-instagram:hover {
+  color: #E11D74;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.ingressos-page{
+  display: flex;
+  background-color: #003366;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ingressos-header{
+  margin: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ingressos-page-title{
+  width: 50%;
+  padding: 3vh;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background: #FFFFFD; 
+}
+
+.ingressos-title{
+  color: black;
+  font-size: 60px;
+  font-style: italic;
+  font-weight: 1000;
+  font-family: Inter;
+  text-align: center;
+}
+
+.ingressos-item-text {
+  width: 70%;
+  padding: 8vh;
+  margin-top: 5vh;
+  border-radius: 50px;
+  background: #FFFFFD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inscricao-texto{
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  font-family: Inter;
+}
+
+button{
+  cursor: pointer;
+}
+
+.botao-header{
+  border-radius: 25px;
+  color: white;
+  font-weight: 700;
+  padding: 0.7rem 1.2rem;
+  margin-top: 1vh;
+  margin-bottom: 15vh;
+}
+
+.botao-inscreva-se{
+  background-color:white;
+  width: 250px;
+  height: 80px;
+  border: white;
+}
+
+.botao-inscreva-se:hover{
+  background-color: rgb(255, 199, 104);
+}
+
+.text-inscrever-se a{
+  text-decoration: none;
+  color: black;
+  font-size: 40px;
+  font-family: Inter;
+}
+
+.text-inscrever-se a:hover{
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+  font-family: Inter;
+}
+
+.faq-page{
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+}
+
+.faq-header{
+  margin: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-page-title{
+  padding: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.faq-title{
+  color: black;
+  font-size: 70px;
+  font-weight: 1000;
+  font-family: Inter;
+  text-align: center;
+}
+
+.faq-item-question{
+  border-bottom: 4px solid grey;
+  border-top: 4px solid grey;
+  padding: 2vh;
+  margin-top: 1vh;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+.faq-item-text{
+  padding: 2vh;
+  margin-bottom: 3vh;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+.faq-question{
+  color: black;
+  font-size: 20px;
+  text-align: left;
+  font-style: italic;
+  font-family: Inter;
+  font-weight: 1000;
+}
+.faq-text{
+  color: gray;
+  font-size: 20px;
+  text-align: left;
+  font-family: Inter;
+}
+
+
+
 /* Breakpoints */
 @media (max-width: 768px) {
   .icons #close-icon {
@@ -92,49 +300,33 @@ nav ul li a {
     align-items: center;
     justify-content: center;
   }
-}
+  .ingressos-title{
+    font-size: 40px !important;
+  }
+  .inscricao-texto{
+    font-size: 20px !important;
+  }
+  .text-inscrever-se a{
+    font-size: 20px;
+  }
+  
+  .text-inscrever-se a:hover{
+    font-size: 20px;
+  }
 
-footer {
-  display: flex;
-  gap: 0.9rem;
-  padding-bottom: 2rem;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #272727;
-  color: #ffffff;
-}
-
-.footer {
-  display: flex;
-  gap: 2rem;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.footer p {
-  width: 75%;
-  text-align: justify;
-}
-
-footer .footer-redes-sociais {
-  display: flex;
-  gap: 1rem;
-}
-
-footer .footer-redes-sociais i {
-  font-size: xx-large;
-  color: #ffffff
-}
-
-footer .footer-redes-sociais i:hover {
-  cursor: pointer;
-}
-
-.fa-facebook:hover {
-  color: blue;
-}
-
-.fa-instagram:hover {
-  color: #E11D74;
+  .botao-inscreva-se{
+    background-color:white;
+    width: 150px;
+    height: 70px;
+    border: white;
+  }
+  .ingressos-page-title{
+    width: 70%;
+    padding: 3vh;
+  }
+  .ingressos-item-text {
+    padding: 5vh;
+    margin-top: 5vh;
+  }
+  
 }
