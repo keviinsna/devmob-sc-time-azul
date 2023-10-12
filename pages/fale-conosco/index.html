@@ -1,50 +1,107 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="../../images/minerva.png" />
-  <link rel="stylesheet" href="../../style/reset_css.css" />
-  <link rel="stylesheet" href="../../style/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-  <title>SC - Fale conosco</title>
-</head>
-
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="../../images/minerva.png" />
+        <link rel="stylesheet" href="../../style/reset_css.css" />
+        <link rel="stylesheet" href="../../style/style.css" />
+        <link rel="stylesheet" href="./styles.css" />
+        <script type="text/javascript" src="./scripts.js" defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+        <title>Semana da Computação</title>
+      </head>
 <body>
-  <header>
-    <nav>
-      <a href="../../index.html"><img src="../../images/logo-ufrj.png" class="img_logo"/></a>
-      <input type="checkbox" id="check" />
-      <label for="check" class="icons">
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
-        <i class="fa-solid fa-xmark" id="close-icon"></i>
-      </label>
-      <ul>
-        <li><a href="../palestrantes/index.html">Palestrantes</a></li>
-        <li><a href="../sessoes/index.html">Sessões</a></li>
-        <li><a href="../ingressos/index.html">Ingressos</a></li>
-        <li><a href="../fale-conosco/index.html">Fale conosco</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <h1>Fale Conosco</h1>
-  </main>
+    <body>
+      <header>
+        <nav>
+          <a href="../../index.html"><img src="../../images/logo-ufrj.png" class="img_logo"/></a>
+          <input type="checkbox" id="check" />
+          <label for="check" class="icons">
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+            <i class="fa-solid fa-xmark" id="close-icon"></i>
+          </label>
+          <ul>
+            <li><a href="../palestrantes/index.html">Palestrantes</a></li>
+            <li><a href="../sessoes/index.html">Sessões</a></li>
+            <li><a href="../ingressos/index.html">Ingressos</a></li>
+            <li><a href="../fale-conosco/index.html">Fale conosco</a></li>
+          </ul>
+        </nav>
+      </header>
+
+        <main>
+        
+          <section class="inicio-fale_conosco">
+            <h1 id="inicio-titulo-fale_conosco">FALE CONOSCO</h1>
+            <h3>Entre Em Contato!</h3>
+          </section>
+
+          <article class="container-fale_conosco">
+            <section class="area-2">
+              <div class="texto-area-2-fale_conosco">
+                <h1>Envie Um E-mail</h1>
+                <h3>Retornaremos em até 72 horas úteis!</h3>
+              </div>  
+
+              <form action="#" id="fale_conosco-form" class="form-area-2-fale_conosco">
+                        
+                <div class="campos-area-2-fale_conosco">
+
+                    <input type="text" placeholder="Nome Completo" required class="input_form-fale_conosco">                   
+                    <input type="email" placeholder="E-mail" required class="input_form-fale_conosco">
+                    <input type="tel" pattern="\(\d{2}\)\s?9\d{4}-\d{4}" title="Formato: (90) 91234-5678" placeholder="Celular" class="input_form-fale_conosco">
+                    
+                    <textarea rows="15" cols="40" maxlength="500" placeholder="Escreva sua dúvida" class="textarea-area-2-fale_conosco"></textarea>
+                    <input type="submit" id="submit-button" class="botao-area-2-fale_conosco">
+                </div>
+
+              </form>
+            </section>
+
+            <section class="area-1"> 
+              <div class="titulo-area-1-fale_conosco">
+                <h1>Siga Nossas Redes</h1>
+                <h3>Curta, Comente e Compartilhe!</h3>
+              </div>
+              <div class="redes-sociais-area-1-fale_conosco">
+                <a href="https://www.instagram.com/">
+                    <img src="../../images/logo-instagram-removebg-preview.png" class="logo-instagram" alt="Logo Instagram" title="Instagram">
+                </a>
+                <a href="https://www.facebook.com/">
+                    <img src="../../images/logo-facebook-removebg-preview.png" class="logo-facebook" alt="Logo Facebook" title="Facebook">
+                </a>
+                <a href="https://www.twitter.com/">
+                    <img src="../../images/logo-twitter-removebg-preview.png" class="logo-twitter" alt="Logo Twitter" title="Twitter" width="70px;">
+                </a>
+              </div>
+              <div class="mapa_embedado-area-1-fale_conosco">
+                <h1>Telefone e Endereço</h1>
+                <h3><span class="texto-negrito">Telefone:</span> (21) 3938-7008 / 3938-7100 
+                 <span class="texto-negrito">Endereço:</span> Av. Athos da Silveira Ramos 149, Bloco I-148, Cidade Universitária, Ilha do Fundão, Rio de Janeiro, 21945-970</h3>
+                  <div class="mapa-embedado">
+                    <div style="overflow:hidden;max-width:100%;width:400px;height:325px;"><div id="embed-ded-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Centro+de+Tecnologia+-+UFRJ,+da+UFRJ+(Ilha+do+-+Avenida+Athos+da+Silveira+Ramos+-+Cidade+Universitária,+Rio+de+Janeiro+-+State+of+Rio+de+Janeiro,+Brazil&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="our-googlemap-code" href="https://www.bootstrapskins.com/themes" id="authmaps-data">premium bootstrap themes</a><style>#embed-ded-map-canvas img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>                    </div>
+              </div>
+            </section>
+
+          </article>
+        </main>
+
+      </body>
+      <footer>
+        <div class="footer">
+          <img src="../../images/logo-ufrj-completa.png" width="240px" height="100px" />
+          <img src="../../images/ic-ufrj.png" width="220px" height="90px" />
+          <img src="../../images/sc-ufrj.png" width="150px" height="200px" />
+        </div>
+      
+        <h1>Redes sociais</h1>
+        <div class="footer-redes-sociais">
+          <a href="https://www.facebook.com/SemanaDaComputacaoUFRJ/"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/semanadacomputacaoufrj"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      
+      </footer>
 </body>
-<footer>
-  <div class="footer">
-    <img src="../../images/logo-ufrj-completa.png" width="240px" height="100px" />
-    <img src="../../images/ic-ufrj.png" width="220px" height="90px" />
-    <img src="../../images/sc-ufrj.png" width="150px" height="200px" />
-  </div>
-
-  <h1>Redes sociais</h1>
-  <div class="footer-redes-sociais">
-    <a href="https://www.facebook.com/SemanaDaComputacaoUFRJ/"><i class="fa-brands fa-facebook"></i></a>
-    <a href="https://www.instagram.com/semanadacomputacaoufrj"><i class="fa-brands fa-instagram"></i></a>
-  </div>
-
-</footer>
-
 </html>
+
