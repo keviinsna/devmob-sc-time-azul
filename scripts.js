@@ -14,11 +14,11 @@ document.addEventListener("DOMContentLoaded", function () {
 // Deve-se decidir se mantem isso ou não 
 
 const checkbox = document.getElementById("check");
-const titulo = document.getElementById("titulo-main-fale_conosco");
+const titulo = document.getElementById("inicio-titulo-fale_conosco");
 
 checkbox.addEventListener("click", function() {
   if (checkbox.checked) {
-    titulo.style.marginTop = "50%";
+    titulo.style.marginTop = "40%";
   } else {
     titulo.style.marginTop = "7.5%";
   }
