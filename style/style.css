@@ -90,6 +90,62 @@ footer .footer-redes-sociais i:hover {
   color: #E11D74;
 }
 
+/* Breakpoints */
+@media (max-width: 768px) {
+  .icons #close-icon {
+    display: none;
+  }
+
+  .icons {
+    display: inline-flex;
+    margin-right: 2rem;
+  }
+
+  #check:checked~.icons #menu-icon {
+    display: none;
+  }
+
+  #check:checked~.icons #close-icon {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    height: 6rem;
+  }
+
+  nav ul {
+    display: none;
+    background-color: #003366;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+  }
+
+  nav ul li {
+    display: block;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 0.7rem 0;
+  }
+
+  #check:checked~ul {
+    display: block;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sessoes-item-text {
+    font-size: 20px !important;
+  }
+}
+
+
+/*CSS de Sessoes*/
 body {
   width: 100%;
   height: 100%;
@@ -184,55 +240,9 @@ body {
   justify-content: space-evenly;
 }
 
+
 /* Breakpoints */
 @media (max-width: 768px) {
-  .icons #close-icon {
-    display: none;
-  }
-
-  .icons {
-    display: inline-flex;
-    margin-right: 2rem;
-  }
-
-  #check:checked~.icons #menu-icon {
-    display: none;
-  }
-
-  #check:checked~.icons #close-icon {
-    display: block;
-  }
-
-  nav {
-    width: 100%;
-    height: 6rem;
-  }
-
-  nav ul {
-    display: none;
-    background-color: #003366;
-    position: absolute;
-    top: 100%;
-    width: 100%;
-  }
-
-  nav ul li {
-    display: block;
-    font-size: 1.1rem;
-    text-align: center;
-    margin: 0.7rem 0;
-  }
-
-  #check:checked~ul {
-    display: block;
-  }
-
-  .footer {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
   .sessoes-item-text {
     font-size: 20px !important;
   }
