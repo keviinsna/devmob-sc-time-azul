@@ -127,8 +127,6 @@ button{
 }
 
 .faq-item-question{
-  border-bottom: 4px solid grey;
-  border-top: 4px solid grey;
   padding: 2vh;
   margin-top: 1vh;
   display: flex;
