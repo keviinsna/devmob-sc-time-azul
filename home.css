@@ -1,0 +1,130 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Courier New", Courier, monospace;
+}
+
+
+.middle {
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10rem;
+}
+
+.bgimg {
+    background-image: url('/images/background.jpg');
+    background-position: center;
+    background-size: cover;
+    color: white;
+
+}
+
+.bgimg h1 {
+    font-size: 50px;
+}
+
+.bgimg h3 {
+    font-size: 25px;
+}
+
+.bgimg .infos {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-bottom: 10px
+}
+
+.bgimg span {
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+
+#ingressos-btn,
+#palestrantes-btn,
+#sessoes-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #E11D74;
+    border: none;
+}
+
+#ingressos-btn:hover,
+#sessoes-btn:hover,
+#palestrantes-btn:hover {
+    cursor: pointer;
+    background-color: #aa014d;
+}
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 30px;
+}
+
+.sobre h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.sobre p {
+    color: #9B9B9B;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: large;
+    font-weight: bold;
+    line-height: 22px;
+}
+
+.saiba-mais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 4rem; */
+    /* margin-right: 4rem; */
+    padding-bottom: 25px;
+    background-color: #dddd;
+}
+
+.saiba-mais h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.saiba-mais .btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .sobre {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .middle {
+        padding: 5rem;
+    }
+}
