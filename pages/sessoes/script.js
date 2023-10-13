@@ -64,6 +64,69 @@ const json = {
       ],
     },
     {
+      titulo: "Segurança Digital: Tendências e Desafios",
+      descricao:
+        "Uma análise abrangente das tendências e desafios em segurança digital. Os palestrantes discutirão ameaças emergentes, estratégias de prevenção e o papel da inteligência artificial na detecção de ataques cibernéticos.",
+      data: "16 OUT",
+      hora: "14:30",
+      duracao: "1h 30min",
+      local: "Sala SecureTech",
+      palestrantes: [
+        {
+          nome: "Luciana Silva",
+          cargo: "Especialista em Segurança Digital",
+          empresa: "SecureGuard Solutions",
+        },
+        {
+          nome: "Rafael Oliveira",
+          cargo: "Pesquisador em Ciberameaças",
+          empresa: "CyberDefense Institute",
+        },
+      ],
+    },
+    {
+      titulo: "Realidade Aumentada: Transformando Experiências",
+      descricao:
+        "Uma imersão no mundo da Realidade Aumentada (AR) e suas aplicações em diferentes setores. Os palestrantes compartilharão casos práticos, tendências e o potencial transformador da AR na forma como interagimos com o ambiente.",
+      data: "17 OUT",
+      hora: "10:30",
+      duracao: "1h",
+      local: "Auditório AR Experience",
+      palestrantes: [
+        {
+          nome: "Fernando Lima",
+          cargo: "Desenvolvedor AR",
+          empresa: "AR Innovate Tech",
+        },
+        {
+          nome: "Carla Santos",
+          cargo: "Designer de Experiência AR",
+          empresa: "Immersive Designs Co.",
+        },
+      ],
+    },
+    {
+      titulo: "5G e a Revolução da Conectividade",
+      descricao:
+        "Uma análise profunda do impacto do 5G nas comunicações e na sociedade. Os palestrantes abordarão as inovações trazidas pelo 5G, desde a velocidade da conectividade até as aplicações transformadoras em diferentes setores.",
+      data: "17 OUT",
+      hora: "16:20",
+      duracao: "1h 15min",
+      local: "Sala ConectaTech",
+      palestrantes: [
+        {
+          nome: "Ricardo Alves",
+          cargo: "Engenheiro de Telecomunicações 5G",
+          empresa: "Connectivity Innovate",
+        },
+        {
+          nome: "Ana Oliveira",
+          cargo: "Estrategista de Redes",
+          empresa: "GlobalConnect Solutions",
+        },
+      ],
+    },
+    {
       titulo: "Robótica Avançada: Além da Linha de Montagem",
       descricao:
         "Explorando as últimas inovações em robótica avançada e suas aplicações além da linha de montagem industrial. Os palestrantes discutirão robôs autônomos, robótica colaborativa e o impacto na sociedade.",
@@ -126,69 +189,7 @@ const json = {
         },
       ],
     },
-    {
-      titulo: "Realidade Aumentada: Transformando Experiências",
-      descricao:
-        "Uma imersão no mundo da Realidade Aumentada (AR) e suas aplicações em diferentes setores. Os palestrantes compartilharão casos práticos, tendências e o potencial transformador da AR na forma como interagimos com o ambiente.",
-      data: "17 OUT",
-      hora: "10:30",
-      duracao: "1h",
-      local: "Auditório AR Experience",
-      palestrantes: [
-        {
-          nome: "Fernando Lima",
-          cargo: "Desenvolvedor AR",
-          empresa: "AR Innovate Tech",
-        },
-        {
-          nome: "Carla Santos",
-          cargo: "Designer de Experiência AR",
-          empresa: "Immersive Designs Co.",
-        },
-      ],
-    },
-    {
-      titulo: "5G e a Revolução da Conectividade",
-      descricao:
-        "Uma análise profunda do impacto do 5G nas comunicações e na sociedade. Os palestrantes abordarão as inovações trazidas pelo 5G, desde a velocidade da conectividade até as aplicações transformadoras em diferentes setores.",
-      data: "17 OUT",
-      hora: "16:20",
-      duracao: "1h 15min",
-      local: "Sala ConectaTech",
-      palestrantes: [
-        {
-          nome: "Ricardo Alves",
-          cargo: "Engenheiro de Telecomunicações 5G",
-          empresa: "Connectivity Innovate",
-        },
-        {
-          nome: "Ana Oliveira",
-          cargo: "Estrategista de Redes",
-          empresa: "GlobalConnect Solutions",
-        },
-      ],
-    },
-    {
-      titulo: "Sustentabilidade na Tecnologia",
-      descricao:
-        "Explorando como a tecnologia pode impulsionar práticas sustentáveis para um futuro mais verde. Os palestrantes compartilharão iniciativas inovadoras e estratégias para integrar a sustentabilidade no desenvolvimento tecnológico.",
-      data: "20 OUT",
-      hora: "17:00",
-      duracao: "1h 30min",
-      local: "Sala SustenTech",
-      palestrantes: [
-        {
-          nome: "Gabriel Oliveira",
-          cargo: "Consultor em Tecnologia Sustentável",
-          empresa: "GreenTech Consulting",
-        },
-        {
-          nome: "Amanda Almeida",
-          cargo: "Empreendedor em Sustentabilidade",
-          empresa: "Sustainable Innovations Ltda.",
-        },
-      ],
-    },
+
     {
       titulo: "Futuro da Educação: Tecnologia na Sala de Aula",
       descricao:
@@ -274,23 +275,23 @@ const json = {
       ],
     },
     {
-      titulo: "Segurança Digital: Tendências e Desafios",
+      titulo: "Sustentabilidade na Tecnologia",
       descricao:
-        "Uma análise abrangente das tendências e desafios em segurança digital. Os palestrantes discutirão ameaças emergentes, estratégias de prevenção e o papel da inteligência artificial na detecção de ataques cibernéticos.",
-      data: "16 OUT",
-      hora: "14:30",
+        "Explorando como a tecnologia pode impulsionar práticas sustentáveis para um futuro mais verde. Os palestrantes compartilharão iniciativas inovadoras e estratégias para integrar a sustentabilidade no desenvolvimento tecnológico.",
+      data: "20 OUT",
+      hora: "17:00",
       duracao: "1h 30min",
-      local: "Sala SecureTech",
+      local: "Sala SustenTech",
       palestrantes: [
         {
-          nome: "Luciana Silva",
-          cargo: "Especialista em Segurança Digital",
-          empresa: "SecureGuard Solutions",
+          nome: "Gabriel Oliveira",
+          cargo: "Consultor em Tecnologia Sustentável",
+          empresa: "GreenTech Consulting",
         },
         {
-          nome: "Rafael Oliveira",
-          cargo: "Pesquisador em Ciberameaças",
-          empresa: "CyberDefense Institute",
+          nome: "Amanda Almeida",
+          cargo: "Empreendedor em Sustentabilidade",
+          empresa: "Sustainable Innovations Ltda.",
         },
       ],
     },
