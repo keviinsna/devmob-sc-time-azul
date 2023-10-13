@@ -7,6 +7,7 @@
   <link rel="icon" href="../../images/minerva.png" />
   <link rel="stylesheet" href="../../style/reset_css.css" />
   <link rel="stylesheet" href="../../style/style.css" />
+  <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
   <title>SC - Sessões</title>
 </head>
@@ -14,14 +15,13 @@
 <body>
   <header>
     <nav>
-      <a href="../../index.html"><img src="../../images/logo-ufrj.png" /></a>
+      <a href="../../index.html"><img src="../../images/logo-ufrj.png" class="img_logo"/></a>
       <input type="checkbox" id="check" />
       <label for="check" class="icons">
         <i class="fa-solid fa-bars" id="menu-icon"></i>
         <i class="fa-solid fa-xmark" id="close-icon"></i>
       </label>
       <ul>
-        <li><a href="../programacao/index.html">Programação</a></li>
         <li><a href="../palestrantes/index.html">Palestrantes</a></li>
         <li><a href="../sessoes/index.html">Sessões</a></li>
         <li><a href="../ingressos/index.html">Ingressos</a></li>
@@ -29,10 +29,136 @@
       </ul>
     </nav>
   </header>
+
   <main>
-    <h1>Sessões</h1>
+    <div class="sessoes-page-container">
+      <div class="inner-margin"></div>
+      <div class="sessoes-page-header">
+        <div class="sessoes-page-title">
+          <div class="sessoes-item-text">Sessões e Programação</div>
+        </div>
+      </div>
+      <div class="sessoes-item">
+        <div class="sessoes-item-date-container">
+          <div class="sessoes-item-text-container">
+            <div class="sessoes-item-text">25 de Outubro</div>
+          </div>
+          <div class="sessoes-item-text-container">
+            <div class="sessoes-item-text">14h30</div>
+          </div>
+        </div>
+        <div class="sessoes-item-event-container">
+          <div class="sessoes-item-text"><b>Palestra: HTML para Iniciantes</b></div>
+          <div class="sessoes-item-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Sed eleifend porttitor metus, nec accumsan purus suscipit at.
+            Ut efficitur diam orci, elementum semper lectus varius ac.
+            In nulla nunc, blandit a est et, egestas consequat purus.
+          </div>
+          <div class="sessoes-item-event-inner-container">
+            <div class="sessoes-item-text">Professor Fulano de Tal</div>
+            <div class="sessoes-item-text">Auditório X, Bloco Y, UFRJ</div>
+          </div>
+        </div>
+      </div>
+      <div class="sessoes-item">
+        <div class="sessoes-item-date-container">
+          <div class="sessoes-item-text-container">
+            <div class="sessoes-item-text">26 de Outubro</div>
+          </div>
+          <div class="sessoes-item-text-container">
+            <div class="sessoes-item-text">11h30</div>
+          </div>
+        </div>
+        <div class="sessoes-item-event-container">
+          <div class="sessoes-item-text"><b>Palestra: CSS para Iniciantes</b></div>
+          <div class="sessoes-item-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Sed eleifend porttitor metus, nec accumsan purus suscipit at.
+            Ut efficitur diam orci, elementum semper lectus varius ac.
+            In nulla nunc, blandit a est et, egestas consequat purus.
+          </div>
+          <div class="sessoes-item-event-inner-container">
+            <div class="sessoes-item-text">Professor Fulano de Tal</div>
+            <div class="sessoes-item-text">Auditório X, Bloco Y, UFRJ</div>
+          </div>
+        </div>
+      </div>
+      <div class="sessoes-item">
+        <div class="sessoes-item-date-container">
+          <div class="sessoes-item-text-container">
+            <div class="sessoes-item-text">27 de Outubro</div>
+          </div>
+          <div class="sessoes-item-text-container">
+            <div class="sessoes-item-text">9h50</div>
+          </div>
+        </div>
+        <div class="sessoes-item-event-container">
+          <div class="sessoes-item-text"><b>Oficina: Fazendo seu site pessoal</b></div>
+          <div class="sessoes-item-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Sed eleifend porttitor metus, nec accumsan purus suscipit at.
+            Ut efficitur diam orci, elementum semper lectus varius ac.
+            In nulla nunc, blandit a est et, egestas consequat purus.
+          </div>
+          <div class="sessoes-item-event-inner-container">
+            <div class="sessoes-item-text">Professor Fulano de Tal</div>
+            <div class="sessoes-item-text">Auditório X, Bloco Y, UFRJ</div>
+          </div>
+        </div>
+      </div>
+      <div class="sessoes-item">
+        <div class="sessoes-item-date-container">
+          <div class="sessoes-item-text-container">
+            <div class="sessoes-item-text">28 de Outubro</div>
+          </div>
+          <div class="sessoes-item-text-container">
+            <div class="sessoes-item-text">17h</div>
+          </div>
+        </div>
+        <div class="sessoes-item-event-container">
+          <div class="sessoes-item-text"><b>Workshop: Quando desistir de Design</b></div>
+          <div class="sessoes-item-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Sed eleifend porttitor metus, nec accumsan purus suscipit at.
+            Ut efficitur diam orci, elementum semper lectus varius ac.
+            In nulla nunc, blandit a est et, egestas consequat purus.
+          </div>
+          <div class="sessoes-item-event-inner-container">
+            <div class="sessoes-item-text">Professor Fulano de Tal</div>
+            <div class="sessoes-item-text">Auditório X, Bloco Y, UFRJ</div>
+          </div>
+        </div>
+      </div>
+      <div class="sessoes-item">
+        <div class="sessoes-item-date-container">
+          <div class="sessoes-item-text-container">
+            <div class="sessoes-item-text">29 de Outubro</div>
+          </div>
+          <div class="sessoes-item-text-container">
+            <div class="sessoes-item-text">13h15</div>
+          </div>
+        </div>
+        <div class="sessoes-item-event-container">
+          <div class="sessoes-item-text"><b>Mesa Redonda: O Último Exemplo</b></div>
+          <div class="sessoes-item-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Sed eleifend porttitor metus, nec accumsan purus suscipit at.
+            Ut efficitur diam orci, elementum semper lectus varius ac.
+            In nulla nunc, blandit a est et, egestas consequat purus.
+          </div>
+          <div class="sessoes-item-event-inner-container">
+            <div class="sessoes-item-text">Professor Fulano de Tal</div>
+            <div class="sessoes-item-text">Auditório X, Bloco Y, UFRJ</div>
+          </div>
+        </div>
+      </div>
+      <div class="inner-margin"></div>
+    </div>  
   </main>
+
 </body>
+
 <footer>
   <div class="footer">
     <img src="../../images/logo-ufrj-completa.png" width="240px" height="100px" />

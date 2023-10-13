@@ -1,0 +1,132 @@
+
+/*CSS de Sessoes*/
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.sessoes-page-container {
+  margin: 5vh 10vh;
+  border-radius: 50px;
+  background-color: #003366;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-margin {
+  margin: 1vh;
+}
+
+.sessoes-page-header {
+  margin: 2.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sessoes-page-title {
+  padding: 3vh;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background: #FFFFFD;  
+}
+
+.sessoes-item {
+  width: 80%;
+  padding: 5vh;
+  margin: 2.5vh;
+  border-radius: 50px;
+  background: #FFFFFD;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.sessoes-item-date-container {
+  width: 25%;
+  height: 25vh;
+  margin-right: 3vh;
+  border-radius: 50px;
+  background: #003366;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sessoes-item-text-container {
+  width: 90%;
+  height: 7.2vh;
+  border-radius: 50px;
+  background: #CABEBE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sessoes-item-text {
+  color: black;
+  font-size: 30px;
+  font-family: Inter;
+}
+
+.sessoes-item-event-container {
+  width: 75%;
+  height: 40vh;
+  padding: 2vh;
+  border-radius: 50px;
+  background: #CABEBE;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sessoes-item-event-inner-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+
+/* Breakpoints */
+@media (max-width: 768px) {
+  .sessoes-item-text {
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 1140px) {
+
+  .sessoes-item {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sessoes-item-date-container {
+    width: 70% !important;
+    height: 25vh;
+    margin-right: 0vh;
+    margin-bottom: 3vh;
+  }
+
+  .sessoes-item-event-container {
+    height: 40vh;
+    padding: 5vh;
+  }
+
+}
+
+@media (max-width: 1400px) {
+
+  .sessoes-item-text {
+    font-size: 25px;
+  }
+}
