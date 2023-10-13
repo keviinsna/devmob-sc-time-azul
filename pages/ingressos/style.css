@@ -6,7 +6,8 @@ body {
 
 .ingressos-page{
   display: flex;
-  background-color:rgba(245, 232, 183, 0.375);
+  background-color: #F1F1F1;
+  /* background-color:rgba(245, 232, 183, 0.375); */
   flex-direction: column;
   justify-content: center;
   align-items: center;
