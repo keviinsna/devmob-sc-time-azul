@@ -18,7 +18,7 @@ const titulo = document.getElementById("inicio-titulo-fale_conosco");
 
 checkbox.addEventListener("click", function() {
   if (checkbox.checked) {
-    titulo.style.marginTop = "50%";
+    titulo.style.marginTop = "40%";
   } else {
     titulo.style.marginTop = "7.5%";
   }
