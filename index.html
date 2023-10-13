@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="./images/minerva.png" />
   <link rel="stylesheet" href="style/reset_css.css" />
   <link rel="stylesheet" href="style/style.css" />
+  <link rel="stylesheet" href="./home.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
   <title>Semana da Computação</title>
   <meta charset="UTF-8" />
@@ -18,11 +19,13 @@
   <title>Semana da Computação</title>
 </head>
 
-
 <body>
   <header>
     <nav>
-      <a href="./index.html"><img src="./images/logo-ufrj.png" class="img_logo"/></a>
+      <a href="./index.html" class="home">
+        <img src="./images/logo-ufrj.png" class="img_logo" />
+        <span class="titulo">Semana da Computação</span>
+      </a>
       <input type="checkbox" id="check" />
       <label for="check" class="icons">
         <i class="fa-solid fa-bars" id="menu-icon"></i>
@@ -37,7 +40,43 @@
     </nav>
   </header>
   <main>
-    <h1>Home</h1>
+    <section class="bgimg">
+      <div class="middle">
+        <h1>Semana da Computação - ufrj</h1>
+        <h3>
+          Venha conhecer a semana mais aguardada do ano
+        </h3>
+        <div class="infos">
+          <span>
+            <i class="fa-regular fa-calendar"></i>
+            16 a 20 de outubro de 2023
+          </span>
+          <span>
+            <i class="fa-solid fa-location-dot"></i>
+            Instituto de Computação, UFRJ
+          </span>
+        </div>
+        <button id="ingressos-btn">Garanta já seu ingresso<i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </section>
+    <section class="sobre">
+      <h1>O que é?</h1>
+      <p>A Semana da Computação é o principal evento do calendário anual no Instituto de Computação. Durante essa semana
+        intensa,
+        mergulhamos em um oceano de conhecimento por meio de palestras envolventes, painéis instigantes e oficinas
+        práticas, abordando uma ampla gama de tópicos candentes na área. O evento ganha vida com a participação de
+        convidados renomados, vindos de diversas partes da indústria, enriquecendo ainda mais as discussões e
+        proporcionando uma visão abrangente do estado atual e futuro da computação. Este é o momento em que a comunidade
+        acadêmica se conecta com os pulsos mais recentes da indústria, criando uma sinergia única que impulsiona a
+        inovação e inspira todos os participantes a alcançarem novos patamares em suas jornadas computacionais. </p>
+    </section>
+    <section class="saiba-mais">
+      <h1>Saiba mais</h1>
+      <section class="btns">
+        <button id="sessoes-btn">Sessões<i class="fa-solid fa-chevron-right"></i></button>
+        <button id="palestrantes-btn">Palestrantes<i class="fa-solid fa-chevron-right"></i></button>
+      </section>
+    </section>
   </main>
 </body>
 <footer>
@@ -52,7 +91,14 @@
     <a href="https://www.facebook.com/SemanaDaComputacaoUFRJ/"><i class="fa-brands fa-facebook"></i></a>
     <a href="https://www.instagram.com/semanadacomputacaoufrj"><i class="fa-brands fa-instagram"></i></a>
   </div>
-
 </footer>
 
 </html>
+<script>
+  const ingressoBtn = document.getElementById('ingressos-btn');
+  const sessoesBtn = document.getElementById('sessoes-btn');
+  const palestrantesButton = document.getElementById('palestrantes-btn');
+  ingressoBtn.addEventListener('click', () => { window.location = './pages/ingressos/index.html'; });
+  sessoesBtn.addEventListener('click', () => { window.location = './pages/sessoes/index.html'; });
+  palestrantesButton.addEventListener('click', () => { window.location = './pages/palestrantes/index.html'; });
+</script>
